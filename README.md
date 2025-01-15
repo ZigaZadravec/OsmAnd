@@ -39,12 +39,17 @@ OsmAnd AIDL API pa je odprtokoden in brezplačen za uporabo v komercialne in nek
 
 OsmAnd aplikacija ima na Google Play Store več kot 10M prenosov in slabih 200k komentarjev s povprečno oceno 4,6.
 
+![image](https://github.com/user-attachments/assets/eb2c93db-8843-45d9-a588-8ad10fec00cf)
 
 ## Informacije o projektu
 
 - **Število zvezdic, sledilcev in forkov**:
 
+![image](https://github.com/user-attachments/assets/4cdd4ce0-572c-46ec-8032-cae89b0c033a)
+
 - **Število razvijalcev**: OsmAnd ima 961 contributerjev.
+
+![image](https://github.com/user-attachments/assets/4eeabc56-425f-4039-8fd1-3730c268df2f)
 
 - **Zadnja posodobitev**: Pred šestimi urami od časa pisanja tega dokumenta. Na dan je v povprečju 100 commitov.
     
@@ -125,3 +130,33 @@ class MainActivity : AppCompatActivity(), OsmAndHelper.OnOsmandMissingListener {
     }
 }
 ```
+
+Primer dialoga, če nimamo nameščene osmAnd aplikacije:
+
+![image](https://github.com/user-attachments/assets/2baa0a18-07e4-4dcc-8f10-ce377100c780)
+
+Primer odprtja zempljevida, centrirano na lokaciji FERI-ja:
+
+![image](https://github.com/user-attachments/assets/c25eac69-0c0a-465c-9b72-4493b2fa4afd)
+
+
+Primer zaznamka priljubljeno:
+
+![image](https://github.com/user-attachments/assets/fe51e538-fdb9-466c-8bbd-b02f32ab863f)
+
+Primer navigacije z avtom:
+
+![image](https://github.com/user-attachments/assets/f08ba372-8f61-4f02-9f4b-cca1ce5645dc)
+
+
+## Uporaba polne knjižnice
+
+Če ne želimo, da je naša aplikacija odvisna od osmAnd aplikacije, lahko sami v svojo aplikacijo dodamo njihovo izvorno kodo. S tem nam je na voljo ves nabor funkcij.
+
+Osebno ne priporočam tega pristopa, saj si je treba vzpostavit razvojno okolje [vzpostavitev razvojnega okolja](https://osmand.net/docs/technical/build-osmand/setup-the-dev-environment/), kar je zamuden proces.
+Obenem bo zaradi tega velikost same aplikacije narasla za približno 150 MB.
+[Dodatne informacije](https://creator.osmand.net/docs/technical/osmand-api-sdk/#android-osmand-full-library-sdk).
+
+Prav tako je potrebno za to veliko več znanja o samem delovanju aplikacije.
+[Primer kode](https://creator.osmand.net/docs/technical/osmand-api-sdk/simple_map_activity/)
+
